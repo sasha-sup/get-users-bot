@@ -1,0 +1,12 @@
+*-venv
+__pycache__/
+*.pyc
+*.yaml
+*.yml
+content/
+log/
+*.log
+.DS_Store
+.env
+*.sh
+

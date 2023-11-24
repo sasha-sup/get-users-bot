@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+content/
+log/
+.git/
+.DS_Store
+.env
+bup/
+*-venv
+session_name.*

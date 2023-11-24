@@ -1,0 +1,4 @@
+asyncpg==0.28.0
+asyncio==3.4.3
+uvloop==0.17.0
+telethon==1.32.1

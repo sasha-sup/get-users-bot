@@ -1,8 +1,9 @@
-from telethon.sync import TelegramClient
-from config import API_ID, API_HASH, PHONE_NUMBER, INVITE_LINK
-from db import ensure_user_exists, create_tables_if_exists
-from config import logger
+import asyncio
 import os
+
+from config import API_HASH, API_ID, INVITE_LINK, PHONE_NUMBER, logger
+from db import create_tables_if_exists, ensure_user_exists
+from telethon.sync import TelegramClient
 
 client = TelegramClient('session_name', API_ID, API_HASH)
 
@@ -42,5 +43,4 @@ async def main():
     await client.disconnect()
 
 if __name__ == '__main__':
-    import asyncio
     asyncio.run(main())
